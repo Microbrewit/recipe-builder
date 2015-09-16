@@ -1,0 +1,15 @@
+<div ng-show="loading > 0" class="main-loading" style="position:fixed;z-index:200;top:0;left:0;right:0;bottom:0;background:white;color:#333;">
+	<header style="text-align:center;position:fixed;left:0;right:0;top:40%;">
+		<h1 class="logo-text">Microbrew.it</h1>
+		<div class="subheader">Loading...</div>
+		<div class="spinner-icon center"></div>
+	</header>
+</div>
+
+<div class="main" ng-controller="MainController">
+	<div mb-message></div>
+	<div class="ui-view-container" ui-view></div>
+</div>
+
+<!-- script includes -->
+<script src="build.js" async></script>
